@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo"><span>Usa</span>ma</a>
+        <nav class="navbar" id="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact_no">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <i class='bx bx-menu'></i> <!-- Boxicons menu icon -->
+        </div>
+        <a href="#contact_no" class="contact-btn">Contact Me</a>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Usama Asif</span></h1>
+            <p>I'm a developer and a teacher with four years of experience. I also have expertise in Islamic Shariah. Feel free to contact me for services!</p>
+            <div class="btn-box">
+                <a href="#contact_no" class="btn-1">Hire Me</a>
+                <a href="Muhammad Usama Asif CV.pdf" download class="btn-2">Download CV</a>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="Usama.jpg" alt="Usama Picture">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Creating modern and responsive websites using HTML, CSS, JavaScript, and more.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-paint'></i>
+                <h3>Graphic Designing</h3>
+                <p>Designing eye-catching graphics and logos for brands, businesses, and individuals.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-book'></i>
+                <h3>Teaching & Consultation</h3>
+                <p>Teaching subjects for 6th-8th class and Islamic Shariah consultation services available.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+<section class="projects" id="projects">
+  <h2 class="heading">My <span>Projects</span></h2>
+  <div class="projects-container">
+      <div class="project-box">
+          <h3>Skin Cancer Detection System (SCD)</h3>
+          <p>This project focuses on the detection of skin cancer using machine learning algorithms. The system features both web and mobile applications with doctor and patient portals. The project uses Python for machine learning, HTML, CSS, JavaScript for the front-end, and a large dataset of 10,000 images for accurate detection.</p>
+          <ul>
+              <li>Technologies Used: Python, HTML, CSS, JavaScript, SQL, Machine Learning</li>
+              <li>Key Features: 
+                  <ul>
+                      <li>Doctor and patient portals</li>
+                      <li>Large dataset of skin cancer images</li>
+                      <li>Real-time skin cancer detection</li>
+                  </ul>
+              </li>
+          </ul>
+          <!-- Slider/Carousel for Project Images -->
+          <div class="image-slider">
+              <div class="slider-container">
+                  <img src="P1.jpg" alt="SCD Web App Screenshot 1">
+                  <img src="P2.png" alt="SCD Web App Screenshot 2">
+                  <img src="P3.png" alt="SCD Mobile App Screenshot">
+                  <img src="P4.jpg" alt="SCD Mobile App Screenshot">
+                  <img src="P5.jpg" alt="SCD Mobile App Screenshot">
+              </div>
+              <!-- Navigation Arrows -->
+              <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+              <span class="next" onclick="moveSlide(1)">&#10095;</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+   <!-- About Section -->
+<section class="about" id="about">
+  <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>I'm a passionate frontend developer who enjoys creating clean and interactive designs. Alongside coding, I have a strong background in teaching and Islamic Studies.</p>
+      <a href="#contact_no" class="btn-2">Hire Me</a>
+  </div>
+</section>
+
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form" action="#">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" id="phone" placeholder="Phone Number">
+                <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact_no">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        
+        <p class="copyright">
+            © 2025 Usama | All rights Reserved
+        </p>
+        <div class="contact_no" id="contact_no">
+          <h2 style="color: white;">Contact Number : 0306-7336981</h2>
+          <h2 style="color: white;">Email : usamaasifofficial@gmail.com</h2>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <script src="script.js"></script> <!-- Link your JavaScript file -->
+</body>
+</html>
